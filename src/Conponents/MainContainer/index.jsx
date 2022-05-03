@@ -1,5 +1,8 @@
+import { useState } from "react";
 import styled from "styled-components";
-import dadosDosPosts from '../../api/posts';
+import dadosDosPosts from "../../api/posts";
+import ManualContent from "../ManualContent";
+import Posts from "../Posts";
 
 const MainContainer = styled.section`
   display: grid;
@@ -26,45 +29,27 @@ const SideBar = styled.section`
   grid-area: sideBar;
 `;
 
-const ManualContent = styled.main`
-  background-color: #f8f8ec;
-  height: 100%;
-  width: 100%;
-  grid-area: main;
-`;
 
-const Post = styled.div`
-  width: 100%;
-  height: 4.58vw;
-  background-color: #5bcfd3;
-  text-align: left;
-  padding: 0 0 0 1rem;
-  display: flex;
-  align-items: center;
-  font-size: 1.77vw;
-  font-weight: 400;
-  font-family: inter;
-  color: #02416d;
-  cursor: pointer;
-`;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  
-
-  function geraPosts(dados) {
-    return dados.map((post) => (
-      <Post>
-        <h3>{post.title}</h3>
-      </Post>
-    ));
-  }
+  const [postAtivo, setPostAtivo] = useState({
+    id: "",
+    active: false,
+  });
 
   return (
     <MainContainer>
       <Header />
-      <SideBar>{geraPosts(dadosDosPosts)}</SideBar>
-      <ManualContent />
+      <SideBar>
+        <Posts setPostAtivo={setPostAtivo} />
+      </SideBar>
+      <ManualContent postAtivo={postAtivo} />
     </MainContainer>
   );
 };
+
+//falta: 
+// - passar o setEstado para o manualContent
+// - fazer a função de alterar o estado do active para true no manual content
+// - fazer a função de alterar o estado do active para false no gerador de posts
