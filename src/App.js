@@ -1,5 +1,6 @@
 import "./App.css";
 import styled from "styled-components";
+import MainContainer from "./Conponents/MainContainer";
 
 function App() {
   const Title = styled.h1`
@@ -18,9 +19,7 @@ function App() {
   `;
   return (
     <>
-      <Title>
-        This is <RepoName>The N2 Utimate Repository!</RepoName>
-      </Title>
+      <MainContainer />
     </>
   );
 }
