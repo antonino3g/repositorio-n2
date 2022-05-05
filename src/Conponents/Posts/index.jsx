@@ -1,39 +1,46 @@
-import { useEffect } from "react";
 import styled from "styled-components";
 import posts from "../../api/posts";
 
 const Post = styled.div`
-  width: 100%;
-  height: 4.58vw;
+  width: 15.62vw;
+  max-width: 250px;
+  height: 3vw;
   background-color: #5bcfd3;
   text-align: left;
   padding: 0 0 0 1rem;
   display: flex;
   align-items: center;
-  font-size: 1.77vw;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: inter;
   color: #02416d;
   cursor: pointer;
+  border-bottom: 1px solid #11999e;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default ({ setPostAtivo }) => {
-  useEffect(() => {
-    window.addEventListener("click", handleClick);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+export default ({ setPostAtivo, postAtivo }) => {
+  //  useEffect(() => {
+  //    window.addEventListener("click", handleClick);
+  //    // eslint-disable-next-line react-hooks/exhaustive-deps
+  //  }, []);
 
   function handleClick(e) {
-    const idNew = [{ id: e.target.id }];
-    setPostAtivo((state) => {
-      return { ...state, ...idNew[0] };
+    e.stopPropagation();
+    selecionaPost(e.target.id);
+  }
+
+  function selecionaPost(postId) {
+    posts.forEach((post) => {
+      if (post.id == postId) {
+        setPostAtivo(post);
+      }
     });
   }
 
   return posts.map((post, index) => (
-    <Post key={index} id={post.id} value={post}>
-      <h3>{post.title}</h3>
+    <Post onClick={handleClick} key={index} id={post.id} value={post}>
+      {post.title}
     </Post>
   ));
 };

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styled from "styled-components";
 import posts from "../../api/posts";
 
@@ -10,19 +11,12 @@ const ManualContent = styled.main`
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default ({ postAtivo }) => {
-  function exibePost() {
-    posts.forEach((post) => {
-      if (post.id === postAtivo) {
-        console.log(post);
-        return (
-          <div>
-            <h1>{post.title}</h1>
-            <p>{post.body}</p>
-          </div>
-        );
-      }
-    });
-  }
+  useEffect(() => {}, [postAtivo]);
 
-  return <ManualContent>{exibePost()}</ManualContent>;
+  return (
+    <ManualContent>
+      <h1>{postAtivo.title}</h1>
+      <p>{postAtivo.body}</p>
+    </ManualContent>
+  );
 };
