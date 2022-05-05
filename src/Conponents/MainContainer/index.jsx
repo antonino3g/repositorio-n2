@@ -30,7 +30,7 @@ const SideBar = styled.section`
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  const [postAtivo, setPostAtivo] = useState("");
+  const [postAtivo, setPostAtivo] = useState('');
   useEffect(() => {
   }, [postAtivo]);
 
@@ -44,8 +44,3 @@ export default () => {
     </MainContainer>
   );
 };
-
-//falta:
-// - passar o setEstado para o manualContent OK
-// - fazer a função de alterar o estado do active para true no manual content
-// - fazer a função de alterar o estado do active para false no gerador de posts

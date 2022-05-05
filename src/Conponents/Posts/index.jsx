@@ -10,7 +10,7 @@ const Post = styled.div`
   padding: 0 0 0 1rem;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.25vw;
   font-weight: 400;
   font-family: inter;
   color: #02416d;
