@@ -53,7 +53,8 @@ const SubHeading = styled.h2`
 const Image = styled.img`
   width: 63vw;
   margin-bottom: 6.14vw;
-`;
+  border-radius: 0.5vw;
+  filter: drop-shadow(0px 4px 4px rgba(7, 40, 100, 0.514));`;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default ({ postAtivo }) => {
