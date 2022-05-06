@@ -1,98 +1,688 @@
 const posts = [
   {
     id: 1,
-    title: "Configurar Wifi",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    category: "Libre Office",
+    author: "Antonino Praxedes",
+    keyWords: [],
+    title: "Autosave no Libre Office",
+    body: [
+      {
+        paragraph:
+          "Você pode encontrar as opções de salvamento automático em:  Ferramentas ▸ Opções ▸ Load/Save ▸ General, ou em Mac OSX, em “Preferências”. Como na imagem a segui:",
+      },
+      {
+        image:
+          "https://ask.libreoffice.org/uploads/asklibo/original/3X/5/c/5cb7c1564fd2176d6f6b0998c41ee625c0b1fa28.png",
+      },
+      { paragraph: "Agora, você pode selecionar a frequência de salvamento." },
+    ],
   },
   {
     id: 2,
-    title: "Como sair da sonda",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    category: "Libre Office",
+    author: "Bruno Zamorano",
+    keyWords: [],
+    title: "Autosave no Libre Office",
+    body: [
+      {
+        paragraph:
+          "Você pode encontrar as opções de salvamento automático em:  Ferramentas ▸ Opções ▸ Load/Save ▸ General, ou em Mac OSX, em “Preferências”. Como na imagem a segui:",
+      },
+      {
+        image:
+          "https://ask.libreoffice.org/uploads/asklibo/original/3X/5/c/5cb7c1564fd2176d6f6b0998c41ee625c0b1fa28.png",
+      },
+      { paragraph: "Agora, você pode selecionar a frequência de salvamento." },
+    ],
   },
   {
     id: 3,
-    title: "Existe um futuro na sonda pra mim?",
-    body: "A RESPOSTA É UM LINDO NÃO.",
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
     id: 4,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    category: "Display",
+    keyWords: [],
+    author: "Anônimo",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 5,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 6,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 7,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 8,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 9,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 10,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 11,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 12,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 13,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 14,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 15,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 16,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 17,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 18,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
   {
-    id: 20,
-    title: "Titulo do post",
-    body: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: "Display",
+    author: "Bruno Zamorano",
+    title: "Alterar a Resolução dos Monitores",
+    body: [
+      {
+        paragraph:
+          "Na Área de trabalho, clique com o botão direito para mostrar o menu de contexto.",
+      },
+      {
+        paragraph: "Após isso, Clique na opção 'Configurações de exibição'.",
+      },
+      {
+        paragraph:
+          "Então, uma pequena janela será aberta com algumas configurações de vídeo. Aqui você pode aumentar o tamanho da sua tela, clicando em “Resolução de tela”. Ah! E seu computador sempre vai sugerir um tamanho recomendado para cada tela/monitor.",
+      },
+      {
+        image:
+          "https://t.ctcdn.com.br/1YJXfvU1gHxsJB3yxolV7u8otbA=/660x0/smart/i544948.png",
+      },
+      {
+        paragraph:
+          "Agora, você pode selecionar a resolução mais adequada ao monitor.",
+      },
+    ],
   },
 ];
 

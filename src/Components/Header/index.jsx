@@ -9,7 +9,7 @@ const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  filter: drop-shadow(0px 4px 4px rgba(251, 253, 255, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `;
 
 const Logo = styled.img`
@@ -20,6 +20,7 @@ const Logo = styled.img`
 const Title = styled.h1`
   color: #ffffff;
   margin: 0 0 0 1rem;
+  font-size: 1.6vw;
 `;
 
 const BarraDePesquisa = styled.input`

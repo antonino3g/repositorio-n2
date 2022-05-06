@@ -24,15 +24,29 @@ const SideBar = styled.section`
   overflow-x: hidden;
 
   &::-webkit-scrollbar {
-    display: none;
+    width: 6px; /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #4cc6ca;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #066699;
+    border: 3px solid transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    border-radius: 20px;
+    background-color: #0f86c6;
   }
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const [postAtivo, setPostAtivo] = useState("");
-  useEffect(() => {
-  }, [postAtivo]);
+  useEffect(() => {}, [postAtivo]);
 
   return (
     <MainContainer>
@@ -44,8 +58,3 @@ export default () => {
     </MainContainer>
   );
 };
-
-//falta:
-// - passar o setEstado para o manualContent OK
-// - fazer a função de alterar o estado do active para true no manual content
-// - fazer a função de alterar o estado do active para false no gerador de posts

@@ -2,20 +2,20 @@ import styled from "styled-components";
 import posts from "../../api/posts";
 
 const Post = styled.div`
-  width: 15.62vw;
-  max-width: 250px;
-  height: 3vw;
-  background-color: #5bcfd3;
-  text-align: left;
-  padding: 0 0 0 1rem;
-  display: flex;
   align-items: center;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: inter;
+  background-color: #5bcfd3;
+  border-bottom: 1px solid #11999e;
   color: #02416d;
   cursor: pointer;
-  border-bottom: 1px solid #11999e;
+  display: flex;
+  font-family: inter;
+  font-size: 1vw;
+  font-weight: 400;
+  height: 3.5vw;
+  max-width: 250px;
+  padding: 0 0 0 1rem;
+  text-align: left;
+  width: 15.62vw;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
