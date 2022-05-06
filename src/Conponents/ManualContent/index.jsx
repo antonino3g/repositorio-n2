@@ -25,6 +25,10 @@ const ManualContent = styled.main`
     border-radius: 20px; /* roundness of the scroll thumb */
     border: 3px solid #f8f8ec; /* creates padding around scroll thumb */
   }
+
+  &::-webkit-scrollbar-thumb:active {
+    background-color: #318ccd; /* color of the scroll thumb */
+  }
 `;
 
 const Title = styled.h1`
@@ -32,8 +36,17 @@ const Title = styled.h1`
   font-weight: 400;
   font-family: inter;
   width: 63vw;
-  margin: 6.14vw 0 3vw;
+  margin: 6.14vw 0 1vw;
   text-align: center;
+`;
+
+const Author = styled.h3`
+  font-size: 1vw;
+  font-weight: 400;
+  font-family: inter;
+  width: 63vw;
+  margin: 0 0 3vw;
+  text-align: right;
 `;
 
 const Paragraph = styled.p`
@@ -73,7 +86,6 @@ export default ({ postAtivo }) => {
 
   function filtroGeral() {
     if (postAtivo !== "") {
-      console.log(postAtivo);
       // eslint-disable-next-line array-callback-return
       return postAtivo.body.map((componente) => {
         if (componente.paragraph) {
@@ -87,9 +99,16 @@ export default ({ postAtivo }) => {
     }
   }
 
+  function formataAutor() {
+    if (postAtivo !== "") {
+      return ` por ${postAtivo.author}`;
+    }
+  }
+
   return (
     <ManualContent>
       <Title>{postAtivo.title}</Title>
+      <Author> {formataAutor()}</Author>
       {filtroGeral()}
     </ManualContent>
   );

@@ -20,6 +20,7 @@ const Logo = styled.img`
 const Title = styled.h1`
   color: #ffffff;
   margin: 0 0 0 1rem;
+  font-size: 1.6vw;
 `;
 
 const BarraDePesquisa = styled.input`

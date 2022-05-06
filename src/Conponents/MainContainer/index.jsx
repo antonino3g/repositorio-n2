@@ -36,6 +36,11 @@ const SideBar = styled.section`
     background-color: #066699;
     border: 3px solid transparent;
   }
+
+  &::-webkit-scrollbar-thumb:active {
+    border-radius: 20px;
+    background-color: #0f86c6;
+  }
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
