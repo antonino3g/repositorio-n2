@@ -24,15 +24,24 @@ const SideBar = styled.section`
   overflow-x: hidden;
 
   &::-webkit-scrollbar {
-    display: none;
+    width: 6px; /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #4cc6ca;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #066699;
+    border: 3px solid transparent;
   }
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  const [postAtivo, setPostAtivo] = useState('');
-  useEffect(() => {
-  }, [postAtivo]);
+  const [postAtivo, setPostAtivo] = useState("");
+  useEffect(() => {}, [postAtivo]);
 
   return (
     <MainContainer>

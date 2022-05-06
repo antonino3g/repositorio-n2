@@ -13,7 +13,17 @@ const ManualContent = styled.main`
   overflow-y: auto;
   overflow-x: hidden;
   &::-webkit-scrollbar {
-    display: none;
+    width: 12px; /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #02416d; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #f8f8ec; /* creates padding around scroll thumb */
   }
 `;
 
@@ -54,7 +64,8 @@ const Image = styled.img`
   width: 63vw;
   margin-bottom: 6.14vw;
   border-radius: 0.5vw;
-  filter: drop-shadow(0px 4px 4px rgba(7, 40, 100, 0.514));`;
+  filter: drop-shadow(0px 4px 4px rgba(7, 40, 100, 0.514));
+`;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default ({ postAtivo }) => {
